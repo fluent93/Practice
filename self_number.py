@@ -7,8 +7,4 @@ def SN_sum():
     return S - GN
 
 def digit_sum(n):
-    s = str(n)
-    total = 0
-    for i in s:
-        total += int(i)
-    return total + n
+    return n + sum([int(x) for x in str(n)])
