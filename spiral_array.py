@@ -22,11 +22,19 @@ def print_board(board):
         print("".join(row))
 
 # move left in a row
-def move_left_row(row, whole_num):
-    for i in range(len(row)):
-        board[row_index][i] = str(whole_num[i])
-    row_index += 1
-    whole_num_index += 1
+def move_left_row():
+
+    for i in range(len(col)):
+        board[r][i] = str(whole_num[i])
+        w += 1
+    r += 1
+    return row_index, col_index, whole_num_index
+
+
+# move down in a col
+def move_down_col():
+    for i in range(len(low)):
+        board[col_index]
 
 
 # move downward in a column
